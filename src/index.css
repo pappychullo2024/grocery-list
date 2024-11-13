@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Monoton&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #00ff88, #050004be);
+  display: flex;
+  justify-content: center;
+}
+
+.grocery-list {
+  margin-top: 70px;
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 3px 3px 0px #222, 5px 5px 0px #378fe5;
+  color: #007ace;
+  font-family: "Berkshire Swash", serif;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.items-input {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+}
+.quatity {
+  border-radius: 10px;
+  border: none;
+}
+
+form button {
+  border-radius: 8px;
+  padding: 10px 30px;
+  font-size: 18px;
+  background: linear-gradient(to right, #ff0000, #720560);
+  cursor: pointer;
+  transition: background-position 0.4s ease-in-out;
+  color: white;
+}
+
+.packinglist {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 30px;
+  margin-top: 10px;
+  gap: 20px;
+}
+.packinglist button {
+  font-size: 25px;
+  cursor: pointer;
+  background: linear-gradient(to right, #00ff88, #0205001f);
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 980px) {
+  form {
+    flex-direction: column;
+  }
+
+  .grocery-list {
+    margin: 70px 20px 20px 20px;
+  }
+
+  .packinglist {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
